@@ -115,22 +115,23 @@
                     calcSync($elt);
                     callback && callback();
                 }
-
-                _onResize();
-                start();
-
-                /*Exposed APIs*/
-                this.calc = calc;
-                this.start = start;
-                this.stop = stop;
-                this.destroy = $.proxy(function () {
-                    if (instances.hasOwnProperty(this.id)) {
-                        instances[this.id].stop();
-                        delete instances[this.id];
-                    }
-                }, this);
             };
+
+        _onResize();
+        start();
+
+        /*Exposed APIs*/
+        this.calc = calc;
+        this.start = start;
+        this.stop = stop;
+        this.destroy = $.proxy(function () {
+            if (instances.hasOwnProperty(this.id)) {
+                instances[this.id].stop();
+                delete instances[this.id];
+            }
+        }, this);
     };
+
 
     /*
      * Declaration
