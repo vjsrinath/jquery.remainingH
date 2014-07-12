@@ -45,11 +45,13 @@
             <div class="remaining-height"></div>
         </div>
     </div>
-    <button content="Calculate" />
+    <button id="calculate" content="Calculate"></button>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" />
     <script src="https://raw.githubusercontent.com/vjsrinath/jquery.remainingH/master/jquery.remainingH.js" type="text/javascript" />
     <script type="text/javascript">
-        $('.container').remainingH();
+    $('#calculate').on('click',function(){
+      $('.container').remainingH();
+      });
     </script>
 
 
