@@ -1,14 +1,13 @@
 /*
  * jQuery remainingH
  * Version 1.0
- * http://srobbin.com/jquery-pageslide/
  *
  * jQuery Javascript plugin that automatically calculates the height dom elements content based on its parent and occupied previous all siblings size.
  *
  * author: Srinath Janakiraman
  * 
- * Copyright (c) 2014 Quadwave Consulting Pvt Ltd (quadwave.com)
- * Dual licensed under the MIT and GPL licenses.
+ * Copyright (c) 2014 (vjsrinath.com)
+ * Licensed under MIT license.
 */
 (function (global, factory) {
     // AMD
