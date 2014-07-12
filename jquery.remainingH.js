@@ -139,7 +139,8 @@
      */
     $.fn.remainingH = function (options) {
         var opts = $.extend({}, $.fn.remainingH.defaults, options);
-        var instance = instances[instance.id] = this.data(key) || new controller(this, opts);
+        var instance = this.data(key) || new controller(this, opts);
+        instances[instance.id] = instance;
         this.data(key, instance);
         return this;
     };
