@@ -124,6 +124,7 @@
         this.calc = calc;
         this.start = start;
         this.stop = stop;
+        this._onResize = _onResize;
         this.destroy = $.proxy(function () {
             if (instances.hasOwnProperty(this.id)) {
                 instances[this.id].stop();
@@ -138,8 +139,7 @@
      */
     $.fn.remainingH = function (options) {
         var opts = $.extend({}, $.fn.remainingH.defaults, options);
-        var instance = new controller(this, opts);
-        instances[instance.id] = instance;
+        var instance = instances[instance.id] = this.data(key) || new controller(this, opts);
         this.data(key, instance);
         return this;
     };
