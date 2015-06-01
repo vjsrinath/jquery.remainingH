@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/vjsrinath/jquery.remainingH/badges/gpa.svg)](https://codeclimate.com/github/vjsrinath/jquery.remainingH)
+
 jquery.remainingH
 =================
 
